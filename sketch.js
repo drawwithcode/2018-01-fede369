@@ -14,14 +14,14 @@ function draw() {
 
 	//Wheel
 	fill(255,0,0);
-	ellipse(250, 465, 70, 70);
+	ellipse(mouseX, 465, 70, 70);
 	fill(204,204,204);
-	ellipse(250, 465, 60, 60);
-	line(250, 465, 250, 495);
-	line(250, 465, 225, 480);
-	line(250, 465, 275, 480);
-	line(250, 465, 225, 450);
-	line(250, 465, 275, 450);
+	ellipse(mouseX, 465, 60, 60);
+	line(mouseX, 435, mouseX, 495);
+	line(mouseX, 465, mouseX-25, 480);
+	line(mouseX, 465, mouseX+25, 480);
+	line(mouseX, 465, mouseX-25, 450);
+	line(mouseX, 465, mouseX+25, 450);
 
 	//arms
 	bezier(200, 325, 170, 400, 140, 400, 120, 325);
